@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "masterIssue": true,
+  "extends": ["config:base", ":label(renovate)", ":prHourlyLimitNone", ":prConcurrentLimit10", ":timezone(Asia/Tokyo)"],
+  "git-submodules": {
+    "enabled": true,
+    "versioning": "git",
+    "fileMatch": ["(^|/).gitmodules$"]
+  }
+}
