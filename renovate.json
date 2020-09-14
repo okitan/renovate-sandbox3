@@ -6,5 +6,9 @@
     "enabled": true,
     "versioning": "git",
     "fileMatch": ["(^|/).gitmodules$"]
+  },
+  "postUpgradeTasks": {
+    "commands": ["touch hoge.txt"],
+    "fileFilters": [".gitmodules"]
   }
 }
